@@ -1,5 +1,10 @@
+body {
+	font-family: 'Fira Sans Condensed', sans-serif;
+}
+
 .titulo {
 	font-size: 70px;
+	font-family: 'Caveat', cursive;
 }
 
 .title-a {
