@@ -2,9 +2,9 @@
 	padding: 10px;
 	border: 2px solid red;
 	margin: 10px;
-
 }
 */
+
 body {
 	font-family: 'Fira Sans Condensed', sans-serif;
 	margin: 0;
@@ -30,8 +30,6 @@ body {
 
 .sistemasnft {
 	color: hsla(360, 0%, 28%, 1);
-	width: 800px;
-	margin: auto;
 }
 
 .sistemasnft h2 {
@@ -42,8 +40,6 @@ body {
 	background-image: url(../images/wallhaven-498611.jpg);
 	color: white;
 	padding: 30px;
-	width: 800px;
-	margin: auto;
 }
 
 .portada button {
@@ -64,7 +60,7 @@ body {
 	display: inline-block;
 }
 
-.header {
+.contenedor {
 	width: 800px;
 	margin: auto;
 }
