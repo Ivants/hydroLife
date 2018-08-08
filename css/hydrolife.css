@@ -26,6 +26,7 @@ body {
 	font-size: 50px;
 	margin-top: 10px;
 	margin-bottom: 20px;
+	margin-left: 20px;
 }
 
 .sistemasnft {
@@ -63,4 +64,32 @@ body {
 .contenedor {
 	width: 800px;
 	margin: auto;
+}
+
+.sistema {
+	padding: 10px;
+	margin: 10px;
+	overflow: hidden;
+	border: 1px solid hsla(360, 0%, 28%, 1);
+}
+
+.sistema ol {
+	padding: 0;
+}
+
+.derecha {
+	float: right;
+}
+
+.izquierda {
+	float: left;
+}
+
+.contenedor-sistema-a {
+	padding-left: 20px;
+}
+
+.contenedor-sistema-b {
+	margin-left: 370px;
+	padding-left: 20px;
 }
