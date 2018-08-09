@@ -102,3 +102,20 @@ button {
 	color: white;
 	height: 30px;
 }
+
+.footer {
+	background: hsla(360, 0%, 28%, 1);
+}
+
+.contacto img {
+	display: block;
+}
+
+.contacto strong {
+	display: block;
+}
+
+.contacto a {
+	color: white;
+	text-decoration: none;
+}
