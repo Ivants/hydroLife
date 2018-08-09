@@ -71,6 +71,7 @@ body {
 	margin: 10px;
 	overflow: hidden;
 	border: 1px solid hsla(360, 0%, 28%, 1);
+	border-radius: 8px;
 }
 
 .sistema ol {
@@ -92,4 +93,12 @@ body {
 .contenedor-sistema-b {
 	margin-left: 370px;
 	padding-left: 20px;
+}
+
+button {
+	border-radius: 5px;
+	border: none;
+	background: #fd324e;
+	color: white;
+	height: 30px;
 }
