@@ -36,7 +36,7 @@
 
             <h3 class="title-a">Cultiva, cosecha y obten una vida maravillosa</h3><!-- Resumen -->
 
-            <button><!-- Boton -->
+            <button class="button"><!-- Boton -->
                 Conoce mas
             </button>
         </div>
@@ -75,52 +75,54 @@
         <div class="contenedor">
             <div class="contacto">
                 <img src="images/logo.png" alt="logotipo">
-
-                <a href="tel:+522227060876"><strong>Telefono</strong>
-                    <span>2227060876</span>
-                </a>
-                <a href="mailto:+522227060876"><strong>E-mail</strong>
-                    <span>hydrolife@hydrolife.com</span>
-                </a>
-                email
+                <div>
+                    <a href="tel:+522227060876"><strong>Telefono</strong>
+                        <span>2227060876</span>
+                    </a>
+                    <a href="mailto:+522227060876"><strong>E-mail</strong>
+                        <span>hydrolife@hydrolife.com</span>
+                    </a>
+                </div>
             </div>
 
             <form class="formulario">
-                <label for="nombre">Nombre</label>
-                <input type="text" required id="nombre" name="nombre" />
-                <label for="email">Email</label>
-                <input type="email" required id="email" name="email" />
-                <div class="sexo">
-                    <label for="mujer">
-                        <input type="radio" id="mujer" name="sexo" value="mujer" />Mujer
-                    </label>                
+                <div class="col1">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" required id="nombre" name="nombre" />
 
-                    <label for="hombre">
-                        <input type="radio" id="hombre" name="sexo" value="hombre" /> Hombre
-                    </label>
+                    <label for="email">Email</label>
+                    <input type="email" required id="email" name="email" />
+                    <div class="sexo">
+                        <label for="mujer">
+                            <input type="radio" id="mujer" name="sexo" value="mujer" checked />Mujer
+                        </label>                
+
+                        <label for="hombre">
+                            <input type="radio" id="hombre" name="sexo" value="hombre" /> Hombre
+                        </label>
+                    </div>
+                    <div class="intereses">
+                        <label for="cotizacion">
+                            <input type="checkbox" id="cotizacion" name="intereses" value="cotizacion" checked /> Cotizacion
+                        </label>
+                        <label for="reclamos">
+                            <input type="checkbox" id="reclamos" name="intereses" value="reclamos" /> Reclamos
+                        </label>
+                        <label for="comentario">
+                            <input type="checkbox" id="comentario" name="intereses" value="comentario" /> Comentario
+                        </label>
+                        <label for="otros">
+                            <input type="checkbox" id="otros" name="intereses" value="otros" /> Otros
+                        </label>
+                    </div>
                 </div>
-                <div class="intereses">
-                    <label for="cotizacion">
-                        <input type="checkbox" id="cotizacion" name="intereses" value="cotizacion" /> Cotizacion
-                    </label>
-                    <label for="reclamos">
-                        <input type="checkbox" id="reclamos" name="intereses" value="reclamos" /> Reclamos
-                    </label>
-                    <label for="comentario">
-                        <input type="checkbox" id="comentario" name="intereses" value="comentario" /> Comentario
-                    </label>
-                    <label for="otros">
-                        <input type="checkbox" id="otros" name="intereses" value="otros" /> Otros
-                    </label>
-                </div>
-                <div>
+                <div class="col2">
                     <label for="comentarios">Comentarios</label>
                     <textarea name="comentarios" id="comentarios" cols="30" rows="5"></textarea>
-                    <input type="submit" value="Enviar"/>
+                    <input type="submit" value="Enviar" class="button" />
                 </div>
             </form>
         </div>
-        
     </footer>
 </body>
 </html>
