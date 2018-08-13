@@ -7,40 +7,40 @@
     <link href="https://fonts.googleapis.com/css?family=Caveat|Fira+Sans+Condensed" rel="stylesheet">
 </head>
 <body>
-    <header id="header" class="header contenedor"> <!-- Header -->
-        <figure class="logotipo"> <!-- Logotipo -->
-            <a href="index.html">
-                <img src="images/logo.png" width="150" alt="HydroLife logotipo">
-            </a>
-        </figure>
-        
-        <nav class="menu"> <!-- Menu -->
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="#sistemasnft">Sistemas NFT</a>
-                </li>
-                <li>
-                    <a href="precios.html">Precios</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
 
     <section id="portada" class="portada"> <!-- Portada -->
-        <div class="contenedor">
+        <header id="header" class="header contenedor"> <!-- Header -->
+            <figure class="logotipo"> <!-- Logotipo -->
+                <a href="index.html">
+                    <img src="images/logo.png" width="150" alt="HydroLife logotipo">
+                </a>
+            </figure>
             
-            <h1 class="titulo">HrydoLife</h1><!-- Titulo -->
+            <nav class="menu"> <!-- Menu -->
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#sistemasnft">Sistemas NFT</a>
+                    </li>
+                    <li>
+                        <a href="precios.html">Precios</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="contenedor">
+
+            <h1 class="titulo">Hrydo<span>Life</span></h1><!-- Titulo -->
 
             <h3 class="title-a">Cultiva, cosecha y obten una vida maravillosa</h3><!-- Resumen -->
 
-            <button class="button"><!-- Boton -->
+            <a class="button" href="#sistemasnft"><!-- Boton -->
                 Conoce mas
-            </button>
+            </a>
         </div>
-    </section>    
+    </section>
 
     <section id="sistemasnft" class="sistemasnft contenedor"> <!-- Sistemasnft -->
         <h2>Nuestros sistemas</h2><!-- Titulo -->
@@ -57,7 +57,7 @@
             </div>
         </article>
 
-        <article class="sistema"> <!-- Sistema 2. Entrada especificas especiales -->
+        <article class="sistema b"> <!-- Sistema 2. Entrada especificas especiales -->
             <img class="izquierda" src="images/nft-bigger.jpg" alt="Sistema nft 180" width="350">
             <div class="contenedor-sistema-b">
                 <h3 class="title-b">Hydro Bigger</h3>
@@ -95,7 +95,7 @@
                     <div class="sexo">
                         <label for="mujer">
                             <input type="radio" id="mujer" name="sexo" value="mujer" checked />Mujer
-                        </label>                
+                        </label>
 
                         <label for="hombre">
                             <input type="radio" id="hombre" name="sexo" value="hombre" /> Hombre

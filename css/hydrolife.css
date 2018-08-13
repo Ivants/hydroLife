@@ -10,11 +10,50 @@ body {
 	margin: 0;
 }
 
+/* Precios */
+
+table {
+	width: 100%;
+}
+
+th {
+	background: hsla(360, 0%, 28%, 1);
+	color: white;
+	padding: 10px 20px;
+	text-align: left;
+}
+
+td {
+	padding: 20px;
+}
+
+table, td, th {
+	border: 1px solid hsla(360, 0%, 28%, 1);
+	border-collapse: collapse;
+}
+
+input, textarea{
+	outline: 0;
+}
+
+input:focus, textarea:focus{
+	background:  lightgray;
+}
+
+.contenedor {
+	width: 800px;
+	margin: auto;
+}
+
 .titulo {
 	font-size: 70px;
 	font-family: 'Caveat', cursive;
 	margin-bottom: 0;
 	margin-top: 70px;
+}
+
+.titulo span {
+	text-decoration: underline;
 }
 
 .title-a {
@@ -31,6 +70,7 @@ body {
 
 .sistemasnft {
 	color: hsla(360, 0%, 28%, 1);
+
 }
 
 .sistemasnft h2 {
@@ -39,8 +79,10 @@ body {
 
 .portada {
 	background-image: url(../images/wallhaven-498611.jpg);
+	background-size: cover;
 	color: white;
 	padding: 30px;
+	height: 520px
 }
 
 .portada button {
@@ -61,21 +103,22 @@ body {
 	content: '∘';
 	font-size: 25px;
 	line-height: 20px;
-	color: blue;
+	color: white;
+}
+
+.menu a {
+	color: white;
+	text-decoration: none;
 }
 
 .logotipo {
 	display: inline-block;
-}
-
-.contenedor {
-	width: 800px;
-	margin: auto;
+	margin-left: 0;
 }
 
 .sistema {
 	padding: 10px;
-	margin: 10px;
+	margin: 10px 10px 40px 10px;
 	overflow: hidden;
 	border: 1px solid hsla(360, 0%, 28%, 1);
 	border-radius: 8px;
@@ -83,6 +126,10 @@ body {
 
 .sistema ol {
 	padding: 0;
+}
+
+.sistema.b {
+	height: 265px;
 }
 
 .derecha {
@@ -100,18 +147,26 @@ body {
 .contenedor-sistema-b {
 	margin-left: 370px;
 	padding-left: 20px;
+	position: relative;
+	bottom: 0px;
 }
 
 .button {
-	border-radius: 5px;
+	border-radius: 15px;
 	border: none;
 	background: #fd324e;
 	color: white;
-	height: 30px;
+	padding: 7px 15px;
+	font-size: 18px;
+	background: linear-gradient(to left, #fd324e,#CD5038);
+	cursor: pointer;
+	text-decoration: none;
+	margin-top: 10px;
 }
 
 .footer {
 	background: hsla(360, 0%, 28%, 1);
+	padding: 50px 10px;
 }
 
 .contacto {
@@ -147,7 +202,6 @@ body {
 	display: flex;
 	width: 400px;
 	color: white;
-	padding: 50px 10px;
 }
 
 .col1, .col2 {
@@ -163,6 +217,10 @@ body {
 	align-items: flex-start;
 }
 
+.col2 .button{
+	margin-top: 15px;
+}
+
 .intereses label {
 	display: inline-block;
 	font-size: 13px;
@@ -174,26 +232,4 @@ body {
 
 .sexo {
 	margin-top: 10px;
-}
-
-/* Precios */
-
-table {
-	width: 100%;
-}
-
-th {
-	background: hsla(360, 0%, 28%, 1);
-	color: white;
-	padding: 10px 20px;
-	text-align: left;
-}
-
-td {
-	padding: 20px;
-}
-
-table, td, th {
-	border: 1px solid hsla(360, 0%, 28%, 1);
-	border-collapse: collapse;
 }
