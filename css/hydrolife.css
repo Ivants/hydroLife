@@ -43,6 +43,12 @@ input:focus, textarea:focus{
 .contenedor {
 	width: 800px;
 	margin: auto;
+	position: relative;
+}
+
+.background {
+	background-image: url(../images/wallhaven-498611.jpg);
+	background-size: cover;
 }
 
 .titulo {
@@ -78,8 +84,6 @@ input:focus, textarea:focus{
 }
 
 .portada {
-	background-image: url(../images/wallhaven-498611.jpg);
-	background-size: cover;
 	color: white;
 	padding: 30px;
 	height: 520px
