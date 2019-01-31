@@ -46,6 +46,13 @@ input:focus, textarea:focus{
 	background:  lightgray;
 }
 
+.header {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .contenedor {
 	width: 800px;
 	margin: auto;
