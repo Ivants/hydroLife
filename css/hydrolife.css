@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-mail3:before {
+  content: "\ea85";
+}
 .icon-phone:before {
   content: "\e942";
 }
@@ -33,9 +36,7 @@
 .icon-close:before {
   content: "\ea0d";
 }
-.icon-mail3:before {
-  content: "\ea85";
-}
+
 
 /** {
 	padding: 10px;
@@ -320,8 +321,9 @@ input:focus, textarea:focus{
 
 	cursor: pointer;
 	position: absolute;
-	left: 0;
-	top: 0;
+	left: 20px;
+	top: 20px;
+	z-index: 3;
 }
 
 
@@ -330,7 +332,7 @@ input:focus, textarea:focus{
 /*--------RESPONSIVEEEEEEEE!!! DESKTOP FIRST--------*/
 @media screen and (max-width: 800px) {
 	
-/*	.header {
+	/*	.header {
 		position: static;
 		display: block;
 		align-items: auto;
@@ -473,6 +475,33 @@ input:focus, textarea:focus{
 	/*PORTADA*/
 	.portada {
 		text-align: center;
+	}
+
+	.portada .contenedor {
+		position: static;
+	}
+
+	.menu {
+		background: rgba(63, 193, 191,.75);
+		position: absolute;
+		width: 100%; /* Le doy un ancho para poder ocultarlo */
+		left: -100%;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		z-index: 2;
+
+		display: flex;
+		align-items: center;
+		transition: .3s;
+	}
+
+	.menu.active {
+		left: 0;
+	}
+
+	.menu ul {
+		flex: 1; /*COn esto le digo que ocupe todo el ancho */
 	}
 
 	.menu li{
