@@ -131,14 +131,37 @@
     </footer>
 
     <script>
+
         var burguerButton = document.getElementById('burguer-button');
         var menu = document.getElementById('menu');
 
-        burguerButton.addEventListener('touchstart', toggleMenu);
+        // Media Query
+        var consulta = window.matchMedia('(max-width:500px)');
+        consulta.addListener(mediaQuery);
+
+        function mediaQuery () {
+            if (consulta.matches) {
+                console.log('se cumplio la condicion');
+                
+                burguerButton.addEventListener('touchstart', toggleMenu);
+
+            } else {
+                console.log('no se cumplio la condicion');
+                burguerButton.removeEventListener('touchstart', toggleMenu);
+
+            }
+        }
+
+        mediaQuery();
 
         function toggleMenu(){
             menu.classList.toggle('active');
         };
+
+
+
+
+
 
         
 
