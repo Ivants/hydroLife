@@ -135,6 +135,7 @@
     </footer>
 
     <script type="text/javascript" src="js/blazy.min.js"></script>
+    <script type="text/javascript" src="js/hammer.min.js"></script>
     <script>
 
         var burguerButton = document.getElementById('burguer-button');
@@ -166,8 +167,21 @@
         var bLazy =  new Blazy({
             selector: 'img',
         });
-        
 
+        // Gestos touch Hammer
+        var body = document.body; // Vamos a escuchar sobre toda mi pagina
+        var gestos =  Hammer(body);
+
+        gestos.on('swiperight', function(event) {
+            alert('swiperight');
+            /* Act on the event */
+        });        
+
+        gestos.on('swipeleft', function(event) {
+            alert('swipeleft');
+            /* Act on the event */
+        });
+        
     </script>
 </body>
 </html>

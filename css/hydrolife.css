@@ -328,6 +328,8 @@ input:focus, textarea:focus{
 	z-index: 3;
 
 	color: white;
+
+	display: none;
 	
 }
 
@@ -514,6 +516,12 @@ video {
 
 @media screen and (max-width: 500px) {
 	/*PORTADA*/
+
+
+	.burguer-button {
+		display: block;
+	}
+	
 	.portada {
 		text-align: center;
 	}
