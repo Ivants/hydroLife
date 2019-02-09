@@ -48,11 +48,16 @@
         <h2>Nuestros sistemas</h2><!-- Titulo -->
 
         <!-- Video -->
-<!--         <div class="video-responsive">
-            <iframe class="video-responsive-src" width="560" height="315" src="https://www.youtube.com/embed/TgYWbQ81AEc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-demo-contenedor">
+            <div class="video-demo">
+                <div class="video-responsive-contenedor">
+                    <iframe class="video-responsive-src" width="560" height="315" src="https://www.youtube.com/embed/QY7fpYhM-34" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+            </div>
             
         </div>
-        <video src="video/Coverr-fish.webm" ></video> -->
+        <!-- <video src="video/Coverr-fish.webm"></video> -->
 
         <article class="sistema"> <!-- Sistema 1. Entrada especificas especiales -->
             <img class="derecha" data-src="images/nft-little.jpg|images/nft-little2x.jpg" alt="Sistema nft 54" width="350">
@@ -173,14 +178,21 @@
         var gestos =  Hammer(body);
 
         gestos.on('swiperight', function(event) {
-            alert('swiperight');
+            showMenu();
             /* Act on the event */
         });        
 
         gestos.on('swipeleft', function(event) {
-            alert('swipeleft');
-            /* Act on the event */
+            hideMenu();
         });
+
+        function showMenu(){
+            menu.classList.add('active');
+        };
+
+        function hideMenu(){
+            menu.classList.remove('active');
+        };
         
     </script>
 </body>

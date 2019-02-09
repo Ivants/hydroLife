@@ -322,7 +322,7 @@ input:focus, textarea:focus{
 	text-align: center;
 
 	cursor: pointer;
-	position: absolute;
+	position: fixed;
 	left: 20px;
 	top: 20px;
 	z-index: 3;
@@ -337,10 +337,23 @@ video {
 	width: 100%;
 }
 
-.video-responsive {
+.video-demo-contenedor {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+.video-demo {
+	max-width: 700px;
+	width: 100%;
+	/*margin: 0 auto 50px;*/
+}
+
+.video-responsive-contenedor {
 	position: relative;
 	padding-top: 56.25%;
 }
+
 
 .video-responsive-src {
 	position: absolute;
@@ -356,7 +369,7 @@ video {
 					(min-resolution:2dppx),
 					(-o-min-device-pixel-ratio:2) {
 	.background {
-		background-image: url(../images/wallhaven-535426.jpg);
+		background-image: url(../images/wallhaven-498611.jpg);
 	}
 }
 
@@ -426,6 +439,10 @@ video {
 		margin: 0;
 		padding: 0;
 	}
+
+	.video-demo-contenedor {
+		margin-bottom: 30px;
+	}
 	/*Sistemas NFT*/
 
 	/*Footer*/
@@ -441,6 +458,7 @@ video {
 	.tabla {
 		margin: 50px 15px;
 	}
+
 	.tabla .contenedor {
 		border:1px solid;
 		overflow: auto;
@@ -517,11 +535,14 @@ video {
 @media screen and (max-width: 500px) {
 	/*PORTADA*/
 
+	.video-demo-contenedor {
+		margin: 0 10px 20px 10px;
+	}
 
 	.burguer-button {
 		display: block;
 	}
-	
+
 	.portada {
 		text-align: center;
 	}
@@ -539,7 +560,7 @@ video {
 
 	.menu {
 		background: rgba(63, 193, 191,.75);
-		position: absolute;
+		position: fixed;
 		width: 100%; /* Le doy un ancho para poder ocultarlo */
 		left: -100%;
 		top: 0;
@@ -583,6 +604,9 @@ video {
 		font-size: 16px;
 	}
 
+	.portada .button{
+		display: block;
+	}
 
 	/*SISTEMAS*/
 
@@ -616,5 +640,15 @@ video {
 	/*FOOTER*/
 	.footer .contenedor {
 		display: block;
+	}
+
+	.formulario .col2 {
+		align-items: stretch;
+	}
+
+
+	/*Precios*/
+	.precios .header .logotipo {
+		margin: 50px 0;
 	}
 }
